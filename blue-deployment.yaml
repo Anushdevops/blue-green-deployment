@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: us-central1-docker.pkg.dev/my-gcp-project/blue-green-images/app:v1
+        image: us-central1-docker.pkg.dev/spry-cosine-443613-f1/blue-green-images/app:v1
         ports:
         - containerPort: 8080

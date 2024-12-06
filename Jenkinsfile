@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Build and Push Image') {
             steps {
-                sh 'docker build -t us-central1-docker.pkg.dev/my-gcp-project/blue-green-images/app:${BUILD_NUMBER} .'
-                sh 'docker push us-central1-docker.pkg.dev/my-gcp-project/blue-green-images/app:${BUILD_NUMBER}'
+                sh 'docker build -t us-central1-docker.pkg.dev/spry-cosine-443613-f1/blue-green-images/app:${BUILD_NUMBER} .'
+                sh 'docker push us-central1-docker.pkg.dev/spry-cosine-443613-f1/blue-green-images/app:${BUILD_NUMBER}'
             }
         }
         stage('Deploy Blue Version') {
